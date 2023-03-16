@@ -11,8 +11,13 @@ console.log(waiting);
 
 
 //Exercise #2
-
-
+for (let i=1; i<=5 ; i++){
+    let x = ""
+    for(let n=1 ;n <= i ; n++){
+      x += "*"
+    }
+  console.log(x)
+  }  
 
 
 
@@ -30,16 +35,23 @@ for (let i = 1; i < 100; i+=2) {
 
 
 // [n]
-
+{
 let n = 6
 let i = 1
 while (i <= n) {
     console.log([i]);
     i++;
 }
+}
 
 //sum
 
 const n = 19
 let i = 1
+let sum = 0
 
+while (i <= n) {
+    sum = sum+i;
+    i++;
+    if(i===n+1) {console.log(sum);}
+}
